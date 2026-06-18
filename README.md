@@ -1,27 +1,46 @@
-# Arbitrary Precision Calculator (APC)
+# Address Book Management System
 
 ## Overview
-Arbitrary Precision Calculator is a C project that performs arithmetic operations on very large integers that cannot be stored using standard C data types. The project uses Doubly Linked Lists to store and process numbers digit by digit.
+A console-based Address Book application developed in C to manage contact information. The application allows users to add, search, edit, delete, and display contacts with permanent storage using file handling.
 
 ## Features
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Handles numbers of arbitrary length
+- Add new contacts
+- Search contacts by name, phone number, or email
+- Edit contact details
+- Delete contacts
+- Display all contacts
+- Phone and email validation
+- Permanent data storage using files
 
-## Files
+## Technologies Used
+- C Programming
+- Structures
+- Arrays
+- File Handling
+- String Functions
+
+## Project Files
 - main.c
-- apc.h
-- addition.c
-- substraction.c
-- multiplication.c
-- division.c
-- compare.c
-- insert_at_first.c
-- insert_at_last.c
-- print.c
+- contact.c / contact.h
+- file.c / file.h
+- populate.c / populate.h
+- contacts.txt
 
-## Compilation
-```bash
-gcc *.c -o a.out
+## Compilation and Execution
+
+gcc *.c -o addressbook
+./addressbook
+
+## Sample Contact Format
+
+omkar,0123456789,om@example.com
+virat,9876543210,virat@example.com
+
+## Learning Outcomes
+- CRUD Operations
+- Structure Handling
+- File Management
+- Data Validation
+- Modular Programming
+
+Author: Omkar Bhagat
